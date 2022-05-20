@@ -96,3 +96,5 @@ La aplicación es una integración de Python y la plataforma MetaTrader5 constan
 Teniendo en cuenta el echo de no haber trabajado anteriormente con el lenguaje Gherkin, se aprendieron nociones básicas del mismo en cuanto a sintaxis y declaraciones así como de Behave necesario para la implementación de este  en Python, también se afianzaron conocimientos con respecto a historias de usuarios.
 
 ## Instrucciones Para usar Codigo
+#### Clone: https://github.com/EuderPerdomo/BDD_Metodologias_Avanzadas.git
+#### Clone GitHub CLI: gh repo clone EuderPerdomo/BDD_Metodologias_Avanzadas
