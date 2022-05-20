@@ -1,0 +1,32 @@
+<testsuite name="enviar_orden.Envio de ordenes" tests="2" errors="0" failures="0" skipped="0" time="0.188" timestamp="2022-05-20T10:40:13.134923" hostname="LAPTOP-823R4SGF"><testcase classname="enviar_orden.Envio de ordenes" name="confirmacion de orden de compra -- @1.1 " status="passed" time="0.176814"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: confirmacion de orden de compra -- @1.1 
+    Given el usuario envia una orden de compra ... passed in 0.001s
+    When se desee compra algun par EURUSD ... passed in 0.176s
+    Then se obtine mensaje con confirmacion de posicion creada Success ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+1. order_send(): by EURUSD 0.01 lots at 1.05581 with deviation=20 points
+orden enviada correctamente
+
+]]>
+</system-out></testcase><testcase classname="enviar_orden.Envio de ordenes" name="confirmacion de orden de compra -- @1.2 " status="passed" time="0.011186"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: confirmacion de orden de compra -- @1.2 
+    Given el usuario envia una orden de compra ... passed in 0.000s
+    When se desee compra algun par dgsdg ... passed in 0.011s
+    Then se obtine mensaje con confirmacion de posicion creada invalid ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+dgsdg not found, can not call order_check()
+
+]]>
+</system-out></testcase></testsuite>

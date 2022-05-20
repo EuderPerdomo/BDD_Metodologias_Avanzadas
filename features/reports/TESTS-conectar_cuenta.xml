@@ -1,0 +1,18 @@
+<testsuite name="conectar_cuenta.Conectarse a la cuenta en MT5" tests="1" errors="0" failures="0" skipped="0" time="0.015825" timestamp="2022-05-20T10:40:12.557445" hostname="LAPTOP-823R4SGF"><testcase classname="conectar_cuenta.Conectarse a la cuenta en MT5" name="verificar onexion a la cuenta. -- @1.1 " status="passed" time="0.015825"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: verificar onexion a la cuenta. -- @1.1 
+    Given el usuario haya iniciado seccion en  mt5 ... passed in 0.002s
+    When el usuario elige la opcion 1 ... passed in 0.013s
+    Then se obtine mensaje de conexion exitosa "Success" ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+La opcion introducida 1
+conectado a la cuenta correctamente (1, 'Success')
+La respuesta Obtenida:  Success
+
+]]>
+</system-out></testcase></testsuite>

@@ -1,0 +1,18 @@
+<testsuite name="Info_account.Informacion de la cuenta" tests="1" errors="0" failures="0" skipped="0" time="0.033222" timestamp="2022-05-20T10:40:12.444659" hostname="LAPTOP-823R4SGF"><testcase classname="Info_account.Informacion de la cuenta" name="conocer saldo disponible. -- @1.1 " status="passed" time="0.033222"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: conocer saldo disponible. -- @1.1 
+    Given en el menu inicial ... passed in 0.001s
+    When el usuario selecciona la opcion 2 ... passed in 0.031s
+    Then se obtine informacion de saldo disponible 650.05 ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+La opcion introducisda 2
+650.05
+La respuesta Obtenida:  650.05
+
+]]>
+</system-out></testcase></testsuite>

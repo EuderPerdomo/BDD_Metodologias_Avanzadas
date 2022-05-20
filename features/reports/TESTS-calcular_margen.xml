@@ -1,0 +1,75 @@
+<testsuite name="calcular_margen.Informacion de la cuenta" tests="4" errors="0" failures="0" skipped="0" time="0.052248" timestamp="2022-05-20T10:40:12.523691" hostname="LAPTOP-823R4SGF"><testcase classname="calcular_margen.Informacion de la cuenta" name="consultar margen necesario -- @1.1 " status="passed" time="0.017593"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @slow
+  Scenario Outline: consultar margen necesario -- @1.1 
+    Given el usuario requiere poner una orden de compra, teniendo en cuenta que la moneda de la cuenta es dolar ... passed in 0.001s
+    When el usuario indica el par de interes EURUSD ... passed in 0.016s
+    Then se obtine informacion del margen necesario para efectuar la operacion margen disponible ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Account сurrency: USD
+SymbolInfo(custom=False, chart_mode=0, select=True, visible=True, session_deals=0, session_buy_orders=0, session_sell_orders=0, volume=0, volumehigh=0, volumelow=0, time=1653072012, digits=5, spread=18, spread_float=True, ticks_bookdepth=0, trade_calc_mode=0, trade_mode=4, start_time=0, expiration_time=0, trade_stops_level=0, trade_freeze_level=0, trade_exemode=2, swap_mode=1, swap_rollover3days=3, margin_hedged_use_leg=False, expiration_mode=15, filling_mode=2, order_mode=127, order_gtc_mode=0, option_mode=0, option_right=0, bid=1.05563, bidhigh=1.05984, bidlow=1.05393, ask=1.05581, askhigh=1.06, asklow=1.05411, last=0.0, lasthigh=0.0, lastlow=0.0, volume_real=0.0, volumehigh_real=0.0, volumelow_real=0.0, option_strike=0.0, point=1e-05, trade_tick_value=1.0, trade_tick_value_profit=1.0, trade_tick_value_loss=1.0, trade_tick_size=1e-05, trade_contract_size=100000.0, trade_accrued_interest=0.0, trade_face_value=0.0, trade_liquidity_rate=0.0, volume_min=0.01, volume_max=50.0, volume_step=0.01, volume_limit=0.0, swap_long=-7.09, swap_short=1.31, margin_initial=0.0, margin_maintenance=0.0, session_volume=0.0, session_turnover=0.0, session_interest=0.0, session_buy_orders_volume=0.0, session_sell_orders_volume=0.0, session_open=1.05816, session_close=1.05815, session_aw=0.0, session_price_settlement=0.0, session_price_limit_min=0.0, session_price_limit_max=0.0, margin_hedged=0.0, price_change=-0.2382, price_volatility=0.0, price_theoretical=0.0, price_greeks_delta=0.0, price_greeks_theta=0.0, price_greeks_gamma=0.0, price_greeks_vega=0.0, price_greeks_rho=0.0, price_greeks_omega=0.0, price_sensitivity=0.0, basis='', category='', currency_base='EUR', currency_profit='USD', currency_margin='EUR', bank='', description='Euro vs US Dollar', exchange='', formula='', isin='', name='EURUSD', page='', path='Forex\\Standard\\Majors\\EURUSD')
+   EURUSD buy 0.1 lot margin: 211.16 USD
+
+]]>
+</system-out></testcase><testcase classname="calcular_margen.Informacion de la cuenta" name="consultar margen necesario -- @1.2 " status="passed" time="0.011137"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @slow
+  Scenario Outline: consultar margen necesario -- @1.2 
+    Given el usuario requiere poner una orden de compra, teniendo en cuenta que la moneda de la cuenta es dolar ... passed in 0.000s
+    When el usuario indica el par de interes uydf ... passed in 0.010s
+    Then se obtine informacion del margen necesario para efectuar la operacion invalida ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Account сurrency: USD
+None
+
+]]>
+</system-out></testcase><testcase classname="calcular_margen.Informacion de la cuenta" name="consultar margen necesario -- @1.3 " status="passed" time="0.011543"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @slow
+  Scenario Outline: consultar margen necesario -- @1.3 
+    Given el usuario requiere poner una orden de compra, teniendo en cuenta que la moneda de la cuenta es dolar ... passed in 0.000s
+    When el usuario indica el par de interes sdgfdgd ... passed in 0.011s
+    Then se obtine informacion del margen necesario para efectuar la operacion invalida ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Account сurrency: USD
+None
+
+]]>
+</system-out></testcase><testcase classname="calcular_margen.Informacion de la cuenta" name="consultar margen necesario -- @1.4 " status="passed" time="0.011976"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @slow
+  Scenario Outline: consultar margen necesario -- @1.4 
+    Given el usuario requiere poner una orden de compra, teniendo en cuenta que la moneda de la cuenta es dolar ... passed in 0.001s
+    When el usuario indica el par de interes USDCAD ... passed in 0.010s
+    Then se obtine informacion del margen necesario para efectuar la operacion margen disponible ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Account сurrency: USD
+SymbolInfo(custom=False, chart_mode=0, select=True, visible=True, session_deals=0, session_buy_orders=0, session_sell_orders=0, volume=0, volumehigh=0, volumelow=0, time=1653072013, digits=5, spread=24, spread_float=True, ticks_bookdepth=0, trade_calc_mode=0, trade_mode=4, start_time=0, expiration_time=0, trade_stops_level=0, trade_freeze_level=0, trade_exemode=2, swap_mode=1, swap_rollover3days=3, margin_hedged_use_leg=False, expiration_mode=15, filling_mode=2, order_mode=127, order_gtc_mode=0, option_mode=0, option_right=0, bid=1.28378, bidhigh=1.28442, bidlow=1.27755, ask=1.28402, askhigh=1.28464, asklow=1.27776, last=0.0, lasthigh=0.0, lastlow=0.0, volume_real=0.0, volumehigh_real=0.0, volumelow_real=0.0, option_strike=0.0, point=1e-05, trade_tick_value=0.7788040684724538, trade_tick_value_profit=0.7788040684724538, trade_tick_value_loss=0.7789496642726949, trade_tick_size=1e-05, trade_contract_size=100000.0, trade_accrued_interest=0.0, trade_face_value=0.0, trade_liquidity_rate=0.0, volume_min=0.01, volume_max=50.0, volume_step=0.01, volume_limit=0.0, swap_long=-3.81, swap_short=-3.31, margin_initial=0.0, margin_maintenance=0.0, session_volume=0.0, session_turnover=0.0, session_interest=0.0, session_buy_orders_volume=0.0, session_sell_orders_volume=0.0, session_open=1.28232, session_close=1.28233, session_aw=0.0, session_price_settlement=0.0, session_price_limit_min=0.0, session_price_limit_max=0.0, margin_hedged=0.0, price_change=0.1131, price_volatility=0.0, price_theoretical=0.0, price_greeks_delta=0.0, price_greeks_theta=0.0, price_greeks_gamma=0.0, price_greeks_vega=0.0, price_greeks_rho=0.0, price_greeks_omega=0.0, price_sensitivity=0.0, basis='', category='', currency_base='USD', currency_profit='CAD', currency_margin='USD', bank='', description='US Dollar vs Canadian Dollar', exchange='', formula='', isin='', name='USDCAD', page='', path='Forex\\Standard\\Majors\\USDCAD')
+   USDCAD buy 0.1 lot margin: 200.0 USD
+
+]]>
+</system-out></testcase></testsuite>
